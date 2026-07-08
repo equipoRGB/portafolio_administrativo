@@ -10,4 +10,7 @@ export const pool = new Pool({
   database: config.database.name,
   user: config.database.user,
   password: config.database.password,
+  ssl: process.env.DB_HOST?.includes('neon.tech')
+    ? { rejectUnauthorized: false }
+    : undefined,
 });
