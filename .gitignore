@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+*.log
+
+# Documentación y agentes (no se sube a GitHub)
+docs/
+AGENTS.MD
